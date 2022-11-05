@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include "timemode.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,6 +19,7 @@ public:
 
 protected:
     Ui::MainWindow *ui;
+    TimeMode time;
     QPushButton *button;
     QPushButton *math;  //ogtagorcvum e erb yntacqum poxum enq nshany
     bool sec_time = false;
@@ -29,9 +31,9 @@ protected:
 
 protected slots:
     void about_clicked();
+    void Timeclicked();
     void Professionalclicked();
     void Standardclicked();
-    void Timeclicked();
     void digits_number();
     void on_pushButton_dot_clicked();
     void operations();

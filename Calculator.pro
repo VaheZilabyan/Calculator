@@ -11,14 +11,17 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    promode.cpp
+    promode.cpp \
+    timemode.cpp
 
 HEADERS += \
     mainwindow.h \
-    promode.h
+    promode.h \
+    timemode.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    timemode.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

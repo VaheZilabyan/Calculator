@@ -13,7 +13,10 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->setWindowTitle("Calculator");
-    ui->stackedWidget->setCurrentIndex(0);
+    ui->stackedWidget_main->setCurrentIndex(0);
+    ui->stackedWidget->setCurrentIndex(1);
+    ui->stackedWidget_main->insertWidget(1, &time);
+
     connect(ui->actionabout, SIGNAL(triggered()), this, SLOT(about_clicked()));
     connect(ui->actionProfessional, SIGNAL(triggered()), this, SLOT(Professionalclicked()));
     connect(ui->actionStandard, SIGNAL(triggered()), this, SLOT(Standardclicked()));
@@ -59,7 +62,8 @@ void MainWindow::Standardclicked()
 {
     ui->label->setText("0");
     ui->history->setText("");
-    ui->stackedWidget->setCurrentIndex(0);
+    ui->stackedWidget_main->setCurrentIndex(0);
+    ui->stackedWidget->setCurrentIndex(1);
     ui->actionStandard->setChecked(true);
     ui->actionProfessional->setChecked(false);
     ui->actionTime->setChecked(false);
@@ -69,7 +73,8 @@ void MainWindow::Professionalclicked()
 {
     ui->label->setText("0");
     ui->history->setText("");
-    ui->stackedWidget->setCurrentIndex(2);
+    ui->stackedWidget_main->setCurrentIndex(0);
+    ui->stackedWidget->setCurrentIndex(0);
     ui->actionProfessional->setChecked(true);
     ui->actionStandard->setChecked(false);
     ui->actionTime->setChecked(false);
@@ -79,8 +84,7 @@ void MainWindow::Timeclicked()
 {
     ui->label->setText("0");
     ui->history->setText("");
-    ui->label_2->setText("");
-    ui->stackedWidget->setCurrentIndex(1);
+    ui->stackedWidget_main->setCurrentIndex(1);
     ui->actionTime->setChecked(true);
     ui->actionStandard->setChecked(false);
     ui->actionProfessional->setChecked(false);
@@ -89,13 +93,10 @@ void MainWindow::Timeclicked()
 void MainWindow::setFontSize(const QString& label) {
     if (label.length() < 10) {
         ui->label->setFont(QFont("Arial", 30));
-        ui->label_2->setFont(QFont("Arial", 30));
     } else if (label.length() >= 10 && label.length() <= 14) {
         ui->label->setFont(QFont("Arial", 22));
-        ui->label_2->setFont(QFont("Arial", 22));
     } else {
         ui->label->setFont(QFont("Arial", 18));
-        ui->label_2->setFont(QFont("Arial", 18));
     }
 }
 
@@ -352,7 +353,7 @@ void MainWindow::clear()
     if (button->text() == "C" || button->text() == "CE") {
         ui->label->setFont(QFont("Arial", 28));
         ui->label->setText("0");
-        ui->label_2->setText("");
+        //ui->label_2->setText("");
         ui->history->setText("");
         ui->comboBox_trigonometry->setCurrentIndex(-1);
         ui->comboBox_functions->setCurrentIndex(-1);
