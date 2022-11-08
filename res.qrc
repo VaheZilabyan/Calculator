@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>img/backspace.ico</file>
+        <file>img/pro.png</file>
+        <file>img/std.png</file>
+        <file>img/clock.png</file>
+        <file>img/about.png</file>
+    </qresource>
+</RCC>

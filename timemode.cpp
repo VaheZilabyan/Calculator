@@ -21,53 +21,18 @@ TimeMode::TimeMode(QWidget *parent) :
     connect(ui->pushButton_backspacet, SIGNAL(clicked()), this, SLOT(clear_timeMode())); //time
 }
 
-void TimeMode::digitsNumber_timeMode()
-{
-    QPushButton *button = static_cast<QPushButton*>(sender());
-    double numbers = (ui->label->text()+ button->text()).toDouble();
-    QString new_label = QString::number(numbers, 'g', 16);
+enum class comboBox_items {
+    Microseconds,
+    Milliseconds,
+    Seconds,
+    Minutes,
+    Hours,
+    Days,
+    Weeks,
+    Years
+};
 
-    if (ui->label->text().contains(".") && button->text() == "0") {
-        new_label = ui->label->text() + button->text();
-    } else {
-        setFontSize(new_label);
-    }
-    ui->label->setText(new_label);
-    setFontSize(new_label);
-}
 
-void TimeMode::setFontSize(const QString& label) {
-    if (label.length() < 10) {
-        ui->label->setFont(QFont("Arial", 30));
-        ui->label_2->setFont(QFont("Arial", 30));
-    } else if (label.length() >= 10 && label.length() <= 14) {
-        ui->label->setFont(QFont("Arial", 22));
-        ui->label_2->setFont(QFont("Arial", 22));
-    } else {
-        ui->label->setFont(QFont("Arial", 18));
-        ui->label_2->setFont(QFont("Arial", 18));
-    }
-}
-
-void TimeMode::clear_timeMode()
-{
-    QPushButton *button = static_cast<QPushButton*>(sender());
-
-    if (button->text() == "C" || button->text() == "CE") {
-        ui->label->setFont(QFont("Arial", 28));
-        ui->label->setText("0");
-        ui->label_2->setText("");
-    } else if (!ui->label->text().contains("e")){    // <=
-        if (ui->label->text().indexOf('i') != -1) {
-            ui->label->setText("0");
-        }
-        ui->label->setText(ui->label->text().remove(ui->label->text().length()-1, 1));
-        setFontSize(ui->label->text());
-        if (ui->label->text().length() == 0) {
-            ui->label->setText("0");
-        }
-    }
-}
 
 void TimeMode::on_answer_clicked()
 {
@@ -325,6 +290,53 @@ void TimeMode::on_answer_clicked()
     }
 }
 
+void TimeMode::digitsNumber_timeMode()
+{
+    QPushButton *button = static_cast<QPushButton*>(sender());
+    double numbers = (ui->label->text()+ button->text()).toDouble();
+    QString new_label = QString::number(numbers, 'g', 16);
+
+    if (ui->label->text().contains(".") && button->text() == "0") {
+        new_label = ui->label->text() + button->text();
+    } else {
+        setFontSize(new_label);
+    }
+    ui->label->setText(new_label);
+    setFontSize(new_label);
+}
+
+void TimeMode::setFontSize(const QString& label) {
+    if (label.length() < 10) {
+        ui->label->setFont(QFont("Arial", 30));
+        ui->label_2->setFont(QFont("Arial", 30));
+    } else if (label.length() >= 10 && label.length() <= 14) {
+        ui->label->setFont(QFont("Arial", 22));
+        ui->label_2->setFont(QFont("Arial", 22));
+    } else {
+        ui->label->setFont(QFont("Arial", 18));
+        ui->label_2->setFont(QFont("Arial", 18));
+    }
+}
+
+void TimeMode::clear_timeMode()
+{
+    QPushButton *button = static_cast<QPushButton*>(sender());
+
+    if (button->text() == "C" || button->text() == "CE") {
+        ui->label->setFont(QFont("Arial", 28));
+        ui->label->setText("0");
+        ui->label_2->setText("");
+    } else if (!ui->label->text().contains("e")){    // <=
+        if (ui->label->text().indexOf('i') != -1) {
+            ui->label->setText("0");
+        }
+        ui->label->setText(ui->label->text().remove(ui->label->text().length()-1, 1));
+        setFontSize(ui->label->text());
+        if (ui->label->text().length() == 0) {
+            ui->label->setText("0");
+        }
+    }
+}
 
 void TimeMode::on_dot_clicked()
 {

@@ -3544,6 +3544,10 @@ QPushButton:pressed {
    <property name="checkable">
     <bool>false</bool>
    </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/img/pro.png</normaloff>:/image/img/pro.png</iconset>
+   </property>
    <property name="text">
     <string>Professional</string>
    </property>
@@ -3551,6 +3555,10 @@ QPushButton:pressed {
   <action name="actionStandard">
    <property name="checkable">
     <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/img/std.png</normaloff>:/image/img/std.png</iconset>
    </property>
    <property name="text">
     <string>Standard</string>
@@ -3560,21 +3568,26 @@ QPushButton:pressed {
    <property name="checkable">
     <bool>false</bool>
    </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/img/clock.png</normaloff>:/image/img/clock.png</iconset>
+   </property>
    <property name="text">
     <string>Time</string>
    </property>
   </action>
-  <action name="actionabout">
-   <property name="text">
-    <string>About</string>
-   </property>
-  </action>
   <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/img/about.png</normaloff>:/image/img/about.png</iconset>
+   </property>
    <property name="text">
     <string>About</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>
