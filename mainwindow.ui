@@ -3531,14 +3531,14 @@ QPushButton:pressed {
     <addaction name="actionProfessional"/>
     <addaction name="actionTime"/>
    </widget>
-   <widget class="QMenu" name="menuabout">
+   <widget class="QMenu" name="menuAbout">
     <property name="title">
-     <string>about</string>
+     <string>About</string>
     </property>
-    <addaction name="actionabout"/>
+    <addaction name="actionAbout"/>
    </widget>
    <addaction name="menuMode"/>
-   <addaction name="menuabout"/>
+   <addaction name="menuAbout"/>
   </widget>
   <action name="actionProfessional">
    <property name="checkable">
@@ -3566,7 +3566,12 @@ QPushButton:pressed {
   </action>
   <action name="actionabout">
    <property name="text">
-    <string>about</string>
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
    </property>
   </action>
  </widget>

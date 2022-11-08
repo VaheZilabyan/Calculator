@@ -17,10 +17,10 @@ public:
 private:
     void setFontSize(const QString&);
 private slots:
-    void clear();
-    void digits_number();
+    void clear_timeMode();
+    void digitsNumber_timeMode();
     void on_answer_clicked();
-    void on_pushButton_dott_clicked();
+    void on_dot_clicked();
 
 public:
     Ui::TimeMode *ui;

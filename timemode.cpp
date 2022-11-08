@@ -6,22 +6,22 @@ TimeMode::TimeMode(QWidget *parent) :
     ui(new Ui::TimeMode)
 {
     ui->setupUi(this);
-    connect(ui->pushButton_0t, SIGNAL(clicked()), this, SLOT(digits_number())); //time
-    connect(ui->pushButton_1t, SIGNAL(clicked()), this, SLOT(digits_number())); //time
-    connect(ui->pushButton_2t, SIGNAL(clicked()), this, SLOT(digits_number())); //time
-    connect(ui->pushButton_3t, SIGNAL(clicked()), this, SLOT(digits_number())); //time
-    connect(ui->pushButton_4t, SIGNAL(clicked()), this, SLOT(digits_number())); //time
-    connect(ui->pushButton_5t, SIGNAL(clicked()), this, SLOT(digits_number())); //time
-    connect(ui->pushButton_6t, SIGNAL(clicked()), this, SLOT(digits_number())); //time
-    connect(ui->pushButton_7t, SIGNAL(clicked()), this, SLOT(digits_number())); //time
-    connect(ui->pushButton_8t, SIGNAL(clicked()), this, SLOT(digits_number())); //time
-    connect(ui->pushButton_9t, SIGNAL(clicked()), this, SLOT(digits_number())); //time
+    connect(ui->pushButton_0t, SIGNAL(clicked()), this, SLOT(digitsNumber_timeMode())); //time
+    connect(ui->pushButton_1t, SIGNAL(clicked()), this, SLOT(digitsNumber_timeMode())); //time
+    connect(ui->pushButton_2t, SIGNAL(clicked()), this, SLOT(digitsNumber_timeMode())); //time
+    connect(ui->pushButton_3t, SIGNAL(clicked()), this, SLOT(digitsNumber_timeMode())); //time
+    connect(ui->pushButton_4t, SIGNAL(clicked()), this, SLOT(digitsNumber_timeMode())); //time
+    connect(ui->pushButton_5t, SIGNAL(clicked()), this, SLOT(digitsNumber_timeMode())); //time
+    connect(ui->pushButton_6t, SIGNAL(clicked()), this, SLOT(digitsNumber_timeMode())); //time
+    connect(ui->pushButton_7t, SIGNAL(clicked()), this, SLOT(digitsNumber_timeMode())); //time
+    connect(ui->pushButton_8t, SIGNAL(clicked()), this, SLOT(digitsNumber_timeMode())); //time
+    connect(ui->pushButton_9t, SIGNAL(clicked()), this, SLOT(digitsNumber_timeMode())); //time
 
-    connect(ui->pushButton_Ct, SIGNAL(clicked()), this, SLOT(clear())); //time
-    connect(ui->pushButton_backspacet, SIGNAL(clicked()), this, SLOT(clear())); //time
+    connect(ui->pushButton_Ct, SIGNAL(clicked()), this, SLOT(clear_timeMode())); //time
+    connect(ui->pushButton_backspacet, SIGNAL(clicked()), this, SLOT(clear_timeMode())); //time
 }
 
-void TimeMode::digits_number()
+void TimeMode::digitsNumber_timeMode()
 {
     QPushButton *button = static_cast<QPushButton*>(sender());
     double numbers = (ui->label->text()+ button->text()).toDouble();
@@ -49,7 +49,7 @@ void TimeMode::setFontSize(const QString& label) {
     }
 }
 
-void TimeMode::clear()
+void TimeMode::clear_timeMode()
 {
     QPushButton *button = static_cast<QPushButton*>(sender());
 
@@ -326,7 +326,7 @@ void TimeMode::on_answer_clicked()
 }
 
 
-void TimeMode::on_pushButton_dott_clicked()
+void TimeMode::on_dot_clicked()
 {
     if (!(ui->label->text().contains('.')))
         ui->label->setText(ui->label->text() + '.');

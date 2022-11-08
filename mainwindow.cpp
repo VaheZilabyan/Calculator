@@ -17,7 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->stackedWidget->setCurrentIndex(1);
     ui->stackedWidget_main->insertWidget(1, &time);
 
-    connect(ui->actionabout, SIGNAL(triggered()), this, SLOT(about_clicked()));
+    connect(ui->actionAbout, SIGNAL(triggered()), this, SLOT(aboutClicked()));
     connect(ui->actionProfessional, SIGNAL(triggered()), this, SLOT(Professionalclicked()));
     connect(ui->actionStandard, SIGNAL(triggered()), this, SLOT(Standardclicked()));
     connect(ui->actionTime, SIGNAL(triggered()), this, SLOT(Timeclicked()));
@@ -53,7 +53,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->actionTime->setCheckable(true);
 }
 
-void MainWindow::about_clicked()
+void MainWindow::aboutClicked()
 {
     QMessageBox::information(this, "About", "Calculator v1.0.0\n© 2022 Synopsys. All rights reserved.");
 }

@@ -30,7 +30,7 @@ protected:
     unsigned int factorial(unsigned int);
 
 protected slots:
-    void about_clicked();
+    void aboutClicked();
     void Timeclicked();
     void Professionalclicked();
     void Standardclicked();
