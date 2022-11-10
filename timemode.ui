@@ -984,21 +984,21 @@ QPushButton:pressed {
          </property>
          <property name="font">
           <font>
-           <family>Segoe UI</family>
+           <family>Arial</family>
            <pointsize>12</pointsize>
            <italic>false</italic>
-           <bold>true</bold>
+           <bold>false</bold>
           </font>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(157, 217, 255);
-	font: 700 12pt &quot;Segoe UI&quot;;
+	font: 100 12pt &quot;Arial&quot;;
 	border-radius: 8px; 
+	background-color: rgb(157, 217, 255);
 }
 
 QPushButton:hover {
-	background-color: rgb(210, 210, 210);
+	background-color: rgb(105, 190, 255);
 	border-radius: 8px; 
 }
 
@@ -1006,7 +1006,7 @@ QPushButton:pressed {
 	color: rgb(0, 0, 0);
  	border-width: 1px;
 	border-radius: 10px;
- 	font: bold 20px;
+ 	font: bold 16px;
  	min-width: 8em;
  	padding: 5px;
 }

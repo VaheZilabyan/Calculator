@@ -131,7 +131,7 @@
               <property name="font">
                <font>
                 <family>Arial</family>
-                <pointsize>28</pointsize>
+                <pointsize>30</pointsize>
                 <italic>false</italic>
                 <bold>false</bold>
                </font>
@@ -175,7 +175,7 @@ border-radius: 5px;</string>
            </size>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="page_pro">
            <layout class="QGridLayout" name="gridLayout_5">
@@ -192,637 +192,9 @@ border-radius: 5px;</string>
              <number>0</number>
             </property>
             <property name="spacing">
-             <number>2</number>
+             <number>1</number>
             </property>
-            <item row="1" column="3">
-             <widget class="QPushButton" name="pushButton_Cp">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>C</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="3">
-             <widget class="QPushButton" name="pushButton_factorial">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>n!</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="5" column="1">
-             <widget class="QPushButton" name="pushButton_4p">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="autoFillBackground">
-               <bool>false</bool>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
-	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
-}
-
-QPushButton:hover {
-	background-color: rgb(210, 210, 210);
-	border-radius: 8px; 
-}
-
-QPushButton:pressed { 
-	color: rgb(0, 0, 0);
- 	border-width: 1px;
-	border-radius: 10px;
- 	font: bold 20px;
- 	min-width: 8em;
- 	padding: 5px;
-}
-</string>
-              </property>
-              <property name="text">
-               <string>4</string>
-              </property>
-              <property name="shortcut">
-               <string>4</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="4">
-             <widget class="QPushButton" name="pushButton_mulp">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>*</string>
-              </property>
-              <property name="shortcut">
-               <string>*</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="6" column="2">
-             <widget class="QPushButton" name="pushButton_2p">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="autoFillBackground">
-               <bool>false</bool>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
-	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
-}
-
-QPushButton:hover {
-	background-color: rgb(210, 210, 210);
-	border-radius: 8px; 
-}
-
-QPushButton:pressed { 
-	color: rgb(0, 0, 0);
- 	border-width: 1px;
-	border-radius: 10px;
- 	font: bold 20px;
- 	min-width: 8em;
- 	padding: 5px;
-}
-</string>
-              </property>
-              <property name="text">
-               <string>2</string>
-              </property>
-              <property name="shortcut">
-               <string>2</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="4">
-             <widget class="QPushButton" name="pushButton_mod">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>mod</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="QPushButton" name="pushButton_leftp">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>(</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QPushButton" name="pushButton_powp">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>x^2</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="4">
-             <widget class="QPushButton" name="pushButton_divp">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>/</string>
-              </property>
-              <property name="shortcut">
-               <string>/</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="0" colspan="3">
-             <widget class="QComboBox" name="comboBox_trigonometry">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>31</height>
-               </size>
-              </property>
-              <property name="placeholderText">
-               <string/>
-              </property>
-              <item>
-               <property name="text">
-                <string>sin</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>cos</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>tan</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>cot</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item row="4" column="3">
-             <widget class="QPushButton" name="pushButton_9p">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="autoFillBackground">
-               <bool>false</bool>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
-	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
-}
-
-QPushButton:hover {
-	background-color: rgb(210, 210, 210);
-	border-radius: 8px; 
-}
-
-QPushButton:pressed { 
-	color: rgb(0, 0, 0);
- 	border-width: 1px;
-	border-radius: 10px;
- 	font: bold 20px;
- 	min-width: 8em;
- 	padding: 5px;
-}
-</string>
-              </property>
-              <property name="text">
-               <string>9</string>
-              </property>
-              <property name="shortcut">
-               <string>9</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="3" colspan="2">
-             <widget class="QComboBox" name="comboBox_functions">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>31</height>
-               </size>
-              </property>
-              <item>
-               <property name="text">
-                <string>random</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>⌊x⌋</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>⌈x⌉</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QPushButton" name="pushButton_pi">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>pi</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0">
+            <item row="4" column="0">
              <widget class="QPushButton" name="pushButton_sqrtp">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -856,8 +228,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>√x</string>
@@ -867,298 +264,7 @@ QPushButton:pressed {
               </property>
              </widget>
             </item>
-            <item row="7" column="1">
-             <widget class="QPushButton" name="pushButton_plus_minusp">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="autoFillBackground">
-               <bool>false</bool>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
-	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
-}
-
-QPushButton:hover {
-	background-color: rgb(210, 210, 210);
-	border-radius: 8px; 
-}
-
-QPushButton:pressed { 
-	color: rgb(0, 0, 0);
- 	border-width: 1px;
-	border-radius: 10px;
- 	font: bold 20px;
- 	min-width: 8em;
- 	padding: 5px;
-}
-</string>
-              </property>
-              <property name="text">
-               <string>+/-</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="2">
-             <widget class="QPushButton" name="pushButton_rightp">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>)</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="0">
-             <widget class="QPushButton" name="pushButton_xy">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>^</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
             <item row="6" column="3">
-             <widget class="QPushButton" name="pushButton_3p">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="autoFillBackground">
-               <bool>false</bool>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
-	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
-}
-
-QPushButton:hover {
-	background-color: rgb(210, 210, 210);
-	border-radius: 8px; 
-}
-
-QPushButton:pressed { 
-	color: rgb(0, 0, 0);
- 	border-width: 1px;
-	border-radius: 10px;
- 	font: bold 20px;
- 	min-width: 8em;
- 	padding: 5px;
-}
-</string>
-              </property>
-              <property name="text">
-               <string>3</string>
-              </property>
-              <property name="shortcut">
-               <string>3</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="2">
-             <widget class="QPushButton" name="pushButton_8p">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="autoFillBackground">
-               <bool>false</bool>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
-	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
-}
-
-QPushButton:hover {
-	background-color: rgb(210, 210, 210);
-	border-radius: 8px; 
-}
-
-QPushButton:pressed { 
-	color: rgb(0, 0, 0);
- 	border-width: 1px;
-	border-radius: 10px;
- 	font: bold 20px;
- 	min-width: 8em;
- 	padding: 5px;
-}
-</string>
-              </property>
-              <property name="text">
-               <string>8</string>
-              </property>
-              <property name="shortcut">
-               <string>8</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="5" column="3">
              <widget class="QPushButton" name="pushButton_6p">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1195,14 +301,14 @@ QPushButton:pressed {
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
+	background-color: rgb(232, 232, 232);
 	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
+	border-radius: 6px; 
 }
 
 QPushButton:hover {
 	background-color: rgb(210, 210, 210);
-	border-radius: 8px; 
+	border-radius: 6px; 
 }
 
 QPushButton:pressed { 
@@ -1226,7 +332,7 @@ QPushButton:pressed {
               </property>
              </widget>
             </item>
-            <item row="2" column="3">
+            <item row="3" column="3">
              <widget class="QPushButton" name="pushButton_exp">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1260,8 +366,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>exp</string>
@@ -1271,8 +402,8 @@ QPushButton:pressed {
               </property>
              </widget>
             </item>
-            <item row="5" column="4">
-             <widget class="QPushButton" name="pushButton_minusp">
+            <item row="7" column="0">
+             <widget class="QPushButton" name="pushButton_log">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1305,67 +436,44 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
               </property>
-              <property name="text">
-               <string>-</string>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
-              <property name="shortcut">
-               <string>-</string>
+              <property name="text">
+               <string>log</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
               </property>
              </widget>
             </item>
-            <item row="2" column="1">
-             <widget class="QPushButton" name="pushButton_1xp">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>0</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>1/x</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="6" column="1">
-             <widget class="QPushButton" name="pushButton_1p">
+            <item row="6" column="2">
+             <widget class="QPushButton" name="pushButton_5p">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1401,14 +509,14 @@ QPushButton:pressed {
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
+	background-color: rgb(232, 232, 232);
 	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
+	border-radius: 6px; 
 }
 
 QPushButton:hover {
 	background-color: rgb(210, 210, 210);
-	border-radius: 8px; 
+	border-radius: 6px; 
 }
 
 QPushButton:pressed { 
@@ -1422,18 +530,18 @@ QPushButton:pressed {
 </string>
               </property>
               <property name="text">
-               <string>1</string>
+               <string>5</string>
               </property>
               <property name="shortcut">
-               <string>1</string>
+               <string>5</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
               </property>
              </widget>
             </item>
-            <item row="7" column="0">
-             <widget class="QPushButton" name="pushButton_ln">
+            <item row="4" column="4">
+             <widget class="QPushButton" name="pushButton_divp">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1466,11 +574,39 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
               <property name="text">
-               <string>ln</string>
+               <string>÷</string>
+              </property>
+              <property name="shortcut">
+               <string>/</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
@@ -1478,7 +614,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="5" column="0">
-             <widget class="QPushButton" name="pushButton_10x">
+             <widget class="QPushButton" name="pushButton_xy">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1511,19 +647,44 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
               <property name="text">
-               <string>10^x</string>
+               <string>^</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
               </property>
              </widget>
             </item>
-            <item row="1" column="2">
-             <widget class="QPushButton" name="pushButton_e">
+            <item row="2" column="4">
+             <widget class="QPushButton" name="pushButton_backspacep">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1556,19 +717,180 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
               <property name="text">
-               <string>e</string>
+               <string>⌫</string>
+              </property>
+              <property name="shortcut">
+               <string>Backspace</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
               </property>
              </widget>
             </item>
-            <item row="2" column="2">
-             <widget class="QPushButton" name="pushButton_modul">
+            <item row="8" column="1">
+             <widget class="QPushButton" name="pushButton_plus_minusp">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(232, 232, 232);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 6px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 6px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 20px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>+/-</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="2">
+             <widget class="QPushButton" name="pushButton_2p">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(232, 232, 232);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 6px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 6px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 20px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>2</string>
+              </property>
+              <property name="shortcut">
+               <string>2</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="3">
+             <widget class="QPushButton" name="pushButton_factorial">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1601,11 +923,36 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
               <property name="text">
-               <string>|x|</string>
+               <string>n!</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
@@ -1613,7 +960,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="4" column="1">
-             <widget class="QPushButton" name="pushButton_7p">
+             <widget class="QPushButton" name="pushButton_leftp">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1644,14 +991,19 @@ QPushButton:pressed {
                 <height>55</height>
                </size>
               </property>
-              <property name="autoFillBackground">
-               <bool>false</bool>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
-	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
 }
 
 QPushButton:hover {
@@ -1663,92 +1015,21 @@ QPushButton:pressed {
 	color: rgb(0, 0, 0);
  	border-width: 1px;
 	border-radius: 10px;
- 	font: bold 20px;
+ 	font: bold 16px;
  	min-width: 8em;
  	padding: 5px;
 }
 </string>
               </property>
               <property name="text">
-               <string>7</string>
-              </property>
-              <property name="shortcut">
-               <string>7</string>
+               <string>(</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
               </property>
              </widget>
             </item>
-            <item row="7" column="3">
-             <widget class="QPushButton" name="pushButton_dotp">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>60</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>200</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="sizeIncrement">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="baseSize">
-               <size>
-                <width>75</width>
-                <height>55</height>
-               </size>
-              </property>
-              <property name="autoFillBackground">
-               <bool>false</bool>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
-	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 6px; 
-}
-
-QPushButton:hover {
-	background-color: rgb(210, 210, 210);
-	border-radius: 6px; 
-}
-
-QPushButton:pressed { 
-	color: rgb(0, 0, 0);
- 	border-width: 1px;
-	border-radius: 10px;
- 	font: bold 20px;
- 	min-width: 8em;
- 	padding: 5px;
-}
-</string>
-              </property>
-              <property name="text">
-               <string>.</string>
-              </property>
-              <property name="shortcut">
-               <string>.</string>
-              </property>
-              <property name="autoDefault">
-               <bool>false</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="7" column="4">
+            <item row="8" column="4">
              <widget class="QPushButton" name="resultp">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1824,8 +1105,148 @@ QPushButton:pressed {
               </property>
              </widget>
             </item>
-            <item row="5" column="2">
-             <widget class="QPushButton" name="pushButton_5p">
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_2i_x">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>2^x</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QPushButton" name="pushButton_1xp">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>0</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>1/x</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="3">
+             <widget class="QPushButton" name="pushButton_3p">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1861,14 +1282,14 @@ QPushButton:pressed {
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
+	background-color: rgb(232, 232, 232);
 	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
+	border-radius: 6px; 
 }
 
 QPushButton:hover {
 	background-color: rgb(210, 210, 210);
-	border-radius: 8px; 
+	border-radius: 6px; 
 }
 
 QPushButton:pressed { 
@@ -1882,18 +1303,18 @@ QPushButton:pressed {
 </string>
               </property>
               <property name="text">
-               <string>5</string>
+               <string>3</string>
               </property>
               <property name="shortcut">
-               <string>5</string>
+               <string>3</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
               </property>
              </widget>
             </item>
-            <item row="6" column="0">
-             <widget class="QPushButton" name="pushButton_log">
+            <item row="4" column="2">
+             <widget class="QPushButton" name="pushButton_rightp">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -1926,18 +1347,912 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
               <property name="text">
-               <string>log</string>
+               <string>)</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
               </property>
              </widget>
             </item>
-            <item row="7" column="2">
+            <item row="3" column="2">
+             <widget class="QPushButton" name="pushButton_modul">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>|x|</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="4">
+             <widget class="QPushButton" name="pushButton_plusp">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>+</string>
+              </property>
+              <property name="shortcut">
+               <string>+</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_powp">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>x^2</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="4">
+             <widget class="QPushButton" name="pushButton_mod">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>mod</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QPushButton" name="pushButton_Cp">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>C</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="pushButton_pi">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>π</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="3">
+             <widget class="QPushButton" name="pushButton_9p">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(232, 232, 232);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 6px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 6px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 20px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>9</string>
+              </property>
+              <property name="shortcut">
+               <string>9</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QPushButton" name="pushButton_4p">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(232, 232, 232);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 6px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 6px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 20px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>4</string>
+              </property>
+              <property name="shortcut">
+               <string>4</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="4">
+             <widget class="QPushButton" name="pushButton_minusp">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>-</string>
+              </property>
+              <property name="shortcut">
+               <string>-</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3" colspan="2">
+             <widget class="QComboBox" name="comboBox_functions">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>random</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>⌊x⌋</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>⌈x⌉</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QPushButton" name="pushButton_ln">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>ln</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="2">
+             <widget class="QPushButton" name="pushButton_8p">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(232, 232, 232);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 6px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 6px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 20px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>8</string>
+              </property>
+              <property name="shortcut">
+               <string>8</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QPushButton" name="pushButton_10x">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 14px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>10^x</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="2">
              <widget class="QPushButton" name="pushButton_0p">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1974,14 +2289,14 @@ QPushButton:pressed {
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton {
-	background-color: rgb(230, 230, 230);
+	background-color: rgb(232, 232, 232);
 	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
+	border-radius: 6px; 
 }
 
 QPushButton:hover {
 	background-color: rgb(210, 210, 210);
-	border-radius: 8px; 
+	border-radius: 6px; 
 }
 
 QPushButton:pressed { 
@@ -2008,8 +2323,45 @@ QPushButton:pressed {
               </property>
              </widget>
             </item>
-            <item row="1" column="4">
-             <widget class="QPushButton" name="pushButton_backspacep">
+            <item row="0" column="0" colspan="3">
+             <widget class="QComboBox" name="comboBox_trigonometry">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>31</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+</string>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+              <item>
+               <property name="text">
+                <string>sin</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>cos</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>tan</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>cot</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="5" column="4">
+             <widget class="QPushButton" name="pushButton_mulp">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2042,22 +2394,47 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
               <property name="text">
-               <string>&lt;=</string>
+               <string>*</string>
               </property>
               <property name="shortcut">
-               <string>Backspace</string>
+               <string>*</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
               </property>
              </widget>
             </item>
-            <item row="1" column="0">
-             <widget class="QPushButton" name="pushButton_2i_x">
+            <item row="8" column="3">
+             <widget class="QPushButton" name="pushButton_dotp">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2088,21 +2465,44 @@ QPushButton:pressed {
                 <height>55</height>
                </size>
               </property>
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-               </font>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(232, 232, 232);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 6px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 6px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 20px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
-               <string>2^x</string>
+               <string>.</string>
+              </property>
+              <property name="shortcut">
+               <string>.</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
               </property>
              </widget>
             </item>
-            <item row="6" column="4">
-             <widget class="QPushButton" name="pushButton_plusp">
+            <item row="2" column="2">
+             <widget class="QPushButton" name="pushButton_e">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -2135,19 +2535,193 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
               </property>
-              <property name="text">
-               <string>+</string>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 5px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
-              <property name="shortcut">
-               <string>+</string>
+              <property name="text">
+               <string>e</string>
               </property>
               <property name="autoDefault">
                <bool>false</bool>
               </property>
              </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QPushButton" name="pushButton_1p">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(232, 232, 232);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 6px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 6px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 20px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>1</string>
+              </property>
+              <property name="shortcut">
+               <string>1</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QPushButton" name="pushButton_7p">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>75</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(232, 232, 232);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 6px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 6px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 20px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>7</string>
+              </property>
+              <property name="shortcut">
+               <string>7</string>
+              </property>
+              <property name="autoDefault">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="5">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>0</width>
+                <height>2</height>
+               </size>
+              </property>
+             </spacer>
             </item>
            </layout>
           </widget>
@@ -2267,8 +2841,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
+                <family>Segoe UI</family>
                 <pointsize>12</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 23px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>-</string>
@@ -2510,8 +3109,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>%</string>
@@ -2620,8 +3244,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>1/x</string>
@@ -2662,11 +3311,36 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
+                <family>Segoe UI</family>
                 <pointsize>12</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 23px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
               <property name="text">
-               <string>/</string>
+               <string>÷</string>
               </property>
               <property name="shortcut">
                <string>/</string>
@@ -2707,11 +3381,36 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+              </property>
               <property name="text">
-               <string>&lt;=</string>
+               <string>⌫</string>
               </property>
               <property name="shortcut">
                <string>Backspace</string>
@@ -2752,8 +3451,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>CE</string>
@@ -2932,8 +3656,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>x^2</string>
@@ -3234,8 +3983,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>C</string>
@@ -3406,8 +4180,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
-                <pointsize>12</pointsize>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 600 10pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 16px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>√x</string>
@@ -3448,8 +4247,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
+                <family>Segoe UI</family>
                 <pointsize>12</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 23px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>+</string>
@@ -3493,8 +4317,33 @@ QPushButton:pressed {
               </property>
               <property name="font">
                <font>
+                <family>Segoe UI</family>
                 <pointsize>12</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
                </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	background-color: rgb(222, 222, 222);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 23px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
               </property>
               <property name="text">
                <string>*</string>
@@ -3524,6 +4373,14 @@ QPushButton:pressed {
     </rect>
    </property>
    <widget class="QMenu" name="menuMode">
+    <property name="geometry">
+     <rect>
+      <x>343</x>
+      <y>87</y>
+      <width>107</width>
+      <height>100</height>
+     </rect>
+    </property>
     <property name="title">
      <string>Mode</string>
     </property>

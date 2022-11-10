@@ -109,39 +109,33 @@ unsigned int MainWindow::factorial(unsigned int n)
 
 void MainWindow::math_operations()
 {
+    button = static_cast<QPushButton*>(sender());
     if (!ui->history->text().isEmpty() && !ui->history->text().contains("=") && !ui->label->text().isEmpty()) { // erb anyndhat + enq nshum
-        button = static_cast<QPushButton*>(sender());
         math = static_cast<QPushButton*>(sender());
         QString str = ui->history->text();
         QStringList tokens = str.split(button->text());
         QString first = tokens[0];
 
-        double temp_answer;
+        double temp_answer = 0.0;
         if (button->text() == "+") {
             temp_answer = first.toDouble() + ui->label->text().toDouble();
-            ui->history->setText(QString::number(temp_answer, 'g', 16) + button->text());
         } else if (button->text() == "-") {
             temp_answer = first.toDouble() - ui->label->text().toDouble();
-            ui->history->setText(QString::number(temp_answer, 'g', 16) + button->text());
         } else if (button->text() == "*") {
             temp_answer = first.toDouble() * ui->label->text().toDouble();
-            ui->history->setText(QString::number(temp_answer, 'g', 16) + button->text());
-        } else if (button->text() == "/") {
+        } else if (button->text() == "÷") {
             temp_answer = first.toDouble() / ui->label->text().toDouble();
-            ui->history->setText(QString::number(temp_answer, 'g', 16) + button->text());
         } else if (button->text() == "^") {
             temp_answer = pow(first.toDouble(), ui->label->text().toDouble());
-            ui->history->setText(QString::number(temp_answer, 'g', 16) + button->text());
         }
+        ui->history->setText(QString::number(temp_answer, 'g', 16) + button->text());
         ui->label->setText("");
         sec_time = true;
     } else if (!ui->history->text().isEmpty() && ui->label->text().isEmpty()) {     //ete +ic heto dnum enq - kam *
         math = static_cast<QPushButton*>(sender());
-        button = static_cast<QPushButton*>(sender());
         ui->history->setText(ui->history->text().remove(ui->history->text().length()-1, 1));
         ui->history->setText(ui->history->text() + button->text());
     } else {    // sovorakan gorcoxutyun,
-        button = static_cast<QPushButton*>(sender());
         first_number = ui->label->text().toDouble();
         ui->history->setText(ui->label->text() + button->text());
         ui->label->setText("");
@@ -157,54 +151,40 @@ void MainWindow::on_result_clicked()
             QStringList tokens = str.split(math->text());
             QString first = tokens[0];
 
-            double temp_answer;
+            double temp_answer = 0.0;
             if (math->text() == "+") {
                 temp_answer = first.toDouble() + ui->label->text().toDouble();
-                ui->label->setText((QString::number(temp_answer, 'g', 16)));
             } else if (math->text() == "-") {
                 temp_answer = first.toDouble() - ui->label->text().toDouble();
-                ui->label->setText((QString::number(temp_answer, 'g', 16)));
             } else if (math->text() == "*") {
                 temp_answer = first.toDouble() * ui->label->text().toDouble();
-                ui->label->setText((QString::number(temp_answer, 'g', 16)));
-            } else if (math->text() == "/") {
+            } else if (math->text() == "÷") {
                 temp_answer = first.toDouble() / ui->label->text().toDouble();
-                ui->label->setText((QString::number(temp_answer, 'g', 16)));
             }  else if (math->text() == "^") {
                 temp_answer = pow(first.toDouble(), ui->label->text().toDouble());
-                ui->label->setText((QString::number(temp_answer, 'g', 16)));
             }
+            ui->label->setText((QString::number(temp_answer, 'g', 16)));
             ui->history->setText("");
 
         }
         else {  // sovorakan erb 5 + 3 = 8
             if (ui->label->text() != "0" && ui->history->text() != "") {
-            ui->history->setText(ui->history->text() + ui->label->text() + " =");
+                ui->history->setText(ui->history->text() + ui->label->text() + " =");
+                second_number = ui->label->text().toDouble();
                 if (button->text() == "+") {
-                    second_number = ui->label->text().toDouble();
                     answer = first_number + second_number;
-                    ui->label->setText(QString::number(answer, 'g', 16));
                 } else if (button->text() == "-") {
-                    second_number = ui->label->text().toDouble();
                     answer = first_number - second_number;
-                    ui->label->setText(QString::number(answer, 'g', 16));
                 } else if (button->text() == "*") {
-                    second_number = ui->label->text().toDouble();
                     answer = first_number * second_number;
-                    ui->label->setText(QString::number(answer, 'g', 16));
-                } else if (button->text() == "/") {
-                    second_number = ui->label->text().toDouble();
+                } else if (button->text() == "÷") {
                     answer = first_number / second_number;
-                    ui->label->setText(QString::number(answer, 'g', 16));
                 } else if (button->text() == "^") {
-                    second_number = ui->label->text().toDouble();
                     answer = pow(first_number, second_number);
-                    ui->label->setText(QString::number(answer, 'g', 16));
                 } else if (button->text() == "mod") {
-                    second_number = ui->label->text().toDouble();
                     answer = static_cast<int>(first_number) % static_cast<int>(second_number);
-                    ui->label->setText(QString::number(answer, 'g', 16));
                 }
+                ui->label->setText(QString::number(answer, 'g', 16));
             }
         }
     } else {    // erb 5+3ic heto anyndhat = enq dnum 8+3, 11+3 ...
@@ -215,7 +195,7 @@ void MainWindow::on_result_clicked()
             answer = answer - second_number;
         } else if (button->text() == "*") {
             answer = answer * second_number;
-        } else if (button->text() == "/") {
+        } else if (button->text() == "÷") {
             answer = answer / second_number;
         } else if (button->text() == "^") {
             answer = pow(answer, second_number);
@@ -323,7 +303,7 @@ void MainWindow::operations()
             setFontSize(new_label);
             ui->label->setText(new_label);
         }
-    } else if (button->text() == "pi") {
+    } else if (button->text() == "π") {
         ui->label->setText(QString::number(M_PI, 'g', 16));
         setFontSize(ui->label->text());
     } else if (button->text() == "e") {
@@ -351,27 +331,22 @@ void MainWindow::clear()
     QPushButton *button = static_cast<QPushButton*>(sender());
 
     if (button->text() == "C" || button->text() == "CE") {
-        ui->label->setFont(QFont("Arial", 28));
         ui->label->setText("0");
-        //ui->label_2->setText("");
         ui->history->setText("");
         ui->comboBox_trigonometry->setCurrentIndex(-1);
         ui->comboBox_functions->setCurrentIndex(-1);
     } else if (!ui->label->text().contains("e")){    // <=
-        //QString new_label = ui->label->text();
-        //new_label.remove(new_label.length()-1, 1);
-        //ui->label->setText(new_label);
-        if (ui->label->text().indexOf('i') != -1) {
+        if (ui->label->text().contains("n")) {
             ui->label->setText("0");
         }
         ui->label->setText(ui->label->text().remove(ui->label->text().length()-1, 1));
-        setFontSize(ui->label->text());
         if (ui->label->text().length() == 0) {
             ui->label->setText("0");
             ui->comboBox_trigonometry->setCurrentIndex(-1);
             ui->comboBox_functions->setCurrentIndex(-1);
         }
     }
+    setFontSize(ui->label->text());
 }
 
 MainWindow::~MainWindow()
