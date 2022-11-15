@@ -41,6 +41,8 @@ ProMode::ProMode(QWidget *parent)
     connect(ui->pushButton_e, SIGNAL(clicked()), this, SLOT(operations()));             //pro
     connect(ui->pushButton_modul, SIGNAL(clicked()), this, SLOT(operations()));         //pro
     connect(ui->pushButton_2i_x, SIGNAL(clicked()), this, SLOT(operations()));          //pro
+    connect(ui->pushButton_pow3, SIGNAL(clicked()), this, SLOT(operations()));          //pro
+    connect(ui->pushButton_sqrt3, SIGNAL(clicked()), this, SLOT(operations()));          //pro
 
     connect(ui->pushButton_dotp, SIGNAL(clicked()), this, SLOT(on_pushButton_dot_clicked()));   //pro
     connect(ui->resultp, SIGNAL(clicked()), this, SLOT(on_result_clicked()));   //pro

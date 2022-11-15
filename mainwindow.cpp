@@ -294,6 +294,20 @@ void MainWindow::operations()
         new_label = QString::number(numbers, 'g', 16);
         setFontSize(new_label);
         ui->label->setText(new_label);
+    } else if (button->text() == "x^3") {
+        numbers = (ui->label->text()).toDouble();
+        ui->history->setText(ui->label->text() +"^3");
+        numbers = pow(numbers, 3);
+        new_label = QString::number(numbers, 'g', 16);
+        setFontSize(new_label);
+        ui->label->setText(new_label);
+    } else if (button->text() == "∛x") {
+        numbers = (ui->label->text()).toDouble();
+        ui->history->setText("∛" + ui->label->text());
+        numbers = cbrt(numbers);
+        new_label = QString::number(numbers, 'g', 16);
+        setFontSize(new_label);
+        ui->label->setText(new_label);
     } else if (button->text() == "|x|") {
         numbers = ui->label->text().toDouble();
         ui->history->setText("abs(" + ui->label->text() + ")");
@@ -353,5 +367,3 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-
