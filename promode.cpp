@@ -173,5 +173,4 @@ void ProMode::operations_pro()
 
 ProMode::~ProMode()
 {
-    //delete ui;
 }

@@ -159,6 +159,7 @@ void TimeMode::on_answer_clicked()
         }
     }
     ui->label_2->setText(QString::number(first, 'g', 16));
+    setFontSize(ui->label->text());
     setFontSize(ui->label_2->text());
 }
 
@@ -205,6 +206,7 @@ void TimeMode::clear_timeMode()
         if (ui->label->text().length() == 0) {
             ui->label->setText("0");
         }
+        ui->label_2->setText("0");
     }
     setFontSize(ui->label->text());
 }

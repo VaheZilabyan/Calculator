@@ -145,7 +145,9 @@ void MainWindow::math_operations()
 
 void MainWindow::on_result_clicked()
 {
-    if (!ui->history->text().contains("=")) {
+    if (ui->history->text().contains("/") || ui->history->text().contains("(")) {   //fix bug
+        ui->history->setText("");
+    } else if (!ui->history->text().contains("=")) {
         if (sec_time == true) {         // erb anyndhat +ic heto sexmum enq =
             QString str = ui->history->text();
             QStringList tokens = str.split(math->text());
@@ -166,8 +168,7 @@ void MainWindow::on_result_clicked()
             ui->label->setText((QString::number(temp_answer, 'g', 16)));
             ui->history->setText("");
 
-        }
-        else {  // sovorakan erb 5 + 3 = 8
+        } else {  // sovorakan erb 5 + 3 = 8
             if (ui->label->text() != "0" && ui->history->text() != "") {
                 ui->history->setText(ui->history->text() + ui->label->text() + " =");
                 second_number = ui->label->text().toDouble();
@@ -233,43 +234,31 @@ void MainWindow::operations()
 {
     QPushButton *button = static_cast<QPushButton*>(sender());
     QString new_label;
-    double numbers;
+    double numbers = 0.0;
 
     if (button->text() == "+/-") {
         numbers = (ui->label->text()).toDouble();
         numbers *= -1;
-        new_label = QString::number(numbers, 'g', 16);
-        setFontSize(new_label);
-        ui->label->setText(new_label);
     } else if (button->text() == "%") {
         numbers = (ui->label->text()).toDouble();
         ui->history->setText(ui->label->text() + "/100");
         numbers *= 0.01;
-        new_label = QString::number(numbers, 'g', 16);
-        setFontSize(new_label);
-        ui->label->setText(new_label);
     } else if (button->text() == "1/x") {
         numbers = (ui->label->text()).toDouble();
         ui->history->setText("1/" + ui->label->text());
         numbers = 1 / numbers;
-        new_label = QString::number(numbers, 'g', 16);
-        setFontSize(new_label);
-        ui->label->setText(new_label);
     } else if (button->text() == "x^2") {
         numbers = (ui->label->text()).toDouble();
         ui->history->setText("pow(" + ui->label->text() +")");
         numbers *= numbers;
-        new_label = QString::number(numbers, 'g', 16);
-        setFontSize(new_label);
-        ui->label->setText(new_label);
     } else if (button->text() == "√x") {
         numbers = (ui->label->text()).toDouble();
         ui->history->setText("sqrt(" + ui->label->text() + ")");
         numbers = sqrt(numbers);
-        new_label = QString::number(numbers, 'g', 16);
-        setFontSize(new_label);
-        ui->label->setText(new_label);
     }
+    new_label = QString::number(numbers, 'g', 16);
+    setFontSize(new_label);
+    ui->label->setText(new_label);
 }
 
 void MainWindow::clear()
