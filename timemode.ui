@@ -55,7 +55,7 @@
      <property name="font">
       <font>
        <family>Arial</family>
-       <pointsize>28</pointsize>
+       <pointsize>30</pointsize>
       </font>
      </property>
      <property name="mouseTracking">
@@ -190,7 +190,7 @@ border-radius: 5px;</string>
          <property name="font">
           <font>
            <family>Arial</family>
-           <pointsize>28</pointsize>
+           <pointsize>30</pointsize>
           </font>
          </property>
          <property name="mouseTracking">

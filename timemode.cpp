@@ -197,7 +197,6 @@ void TimeMode::clear_timeMode()
 
     if (button->text() == "C" || button->text() == "CE") {
         ui->label->setText("0");
-        ui->label_2->setText("");
     } else if (!ui->label->text().contains("e")){    // <=
         if (ui->label->text().contains("i")) {
             ui->label->setText("0");
@@ -206,8 +205,8 @@ void TimeMode::clear_timeMode()
         if (ui->label->text().length() == 0) {
             ui->label->setText("0");
         }
-        ui->label_2->setText("0");
     }
+    ui->label_2->setText("0");
     setFontSize(ui->label->text());
 }
 
