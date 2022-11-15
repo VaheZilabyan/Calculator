@@ -13,5 +13,6 @@ public:
 private slots:
     void comboBox_Trigonometry(int index);
     void comboBox_Functions(int index);
+    void operations_pro();
 };
 #endif // PROMODE_H
