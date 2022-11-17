@@ -144,7 +144,6 @@ void MainWindow::math_operations()
             temp_answer = first.toDouble() / ui->label->text().toDouble();
         } else if (button->text() == "^") {
             temp_answer = pow(first.toDouble(), ui->label->text().toDouble());
-            bug = false;
         }
         ui->history->setText(QString::number(temp_answer, 'g', 16) + button->text());
         ui->label->setText("");
@@ -159,13 +158,13 @@ void MainWindow::math_operations()
         ui->label->setText("");
         sec_time = false;
     }
+    bug = false;
 }
 
 void MainWindow::on_result_clicked()
 {
-    // ete ka ^ gcel arajin if, bayc ^operatori depqum petq a hashvi
-    if (ui->history->text().contains("/") || ui->history->text().contains("(") || ui->history->text().contains("mod")
-        || ui->history->text().contains("∛")) {   //fix bug
+    if ((ui->history->text().contains("/") || ui->history->text().contains("(") || ui->history->text().contains("mod")
+        || ui->history->text().contains("∛")) || (ui->history->text().contains("^") && bug == true)) {   //fix bug
         ui->history->setText("");
     } else if (!ui->history->text().contains("=")) {
         if (sec_time == true) {         // erb anyndhat +ic heto sexmum enq =
