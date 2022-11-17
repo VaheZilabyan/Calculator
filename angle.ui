@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>TimeMode</class>
- <widget class="QWidget" name="TimeMode">
+ <class>Angle</class>
+ <widget class="QWidget" name="Angle">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -133,42 +133,12 @@ border-radius: 5px;</string>
          </property>
          <item>
           <property name="text">
-           <string>Microseconds</string>
+           <string>Degrees</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Milliseconds</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Seconds</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Minutes</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Hours</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Days</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Weeks</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Years</string>
+           <string>Radians</string>
           </property>
          </item>
         </widget>
@@ -239,42 +209,12 @@ border-radius: 5px;</string>
          </property>
          <item>
           <property name="text">
-           <string>Microseconds</string>
+           <string>Degrees</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Milliseconds</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Seconds</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Minutes</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Hours</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Days</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Weeks</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Years</string>
+           <string>Radians</string>
           </property>
          </item>
         </widget>
@@ -296,7 +236,7 @@ border-radius: 5px;</string>
         </spacer>
        </item>
        <item row="4" column="2">
-        <widget class="QPushButton" name="pushButton_Ct">
+        <widget class="QPushButton" name="pushButton_Ca">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -319,7 +259,7 @@ border-radius: 5px;</string>
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(225, 225, 225);
+	background-color: rgb(220, 220, 220);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
@@ -345,7 +285,7 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="4" column="3">
-        <widget class="QPushButton" name="pushButton_backspacet">
+        <widget class="QPushButton" name="pushButton_backspacea">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -368,7 +308,7 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(225, 225, 225);
+	background-color: rgb(220, 220, 220);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
@@ -397,7 +337,7 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="5" column="0" colspan="2">
-        <widget class="QPushButton" name="pushButton_7t">
+        <widget class="QPushButton" name="pushButton_7a">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -420,13 +360,13 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(234, 234, 234);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
 
 QPushButton:hover {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 	border-radius: 8px; 
 }
 
@@ -449,7 +389,7 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="5" column="2">
-        <widget class="QPushButton" name="pushButton_8t">
+        <widget class="QPushButton" name="pushButton_8a">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -472,13 +412,13 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(234, 234, 234);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
 
 QPushButton:hover {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 	border-radius: 8px; 
 }
 
@@ -501,7 +441,7 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="5" column="3">
-        <widget class="QPushButton" name="pushButton_9t">
+        <widget class="QPushButton" name="pushButton_9a">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -524,13 +464,13 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(234, 234, 234);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
 
 QPushButton:hover {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 	border-radius: 8px; 
 }
 
@@ -553,7 +493,7 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="6" column="0" colspan="2">
-        <widget class="QPushButton" name="pushButton_4t">
+        <widget class="QPushButton" name="pushButton_4a">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -576,13 +516,13 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(234, 234, 234);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
 
 QPushButton:hover {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 	border-radius: 8px; 
 }
 
@@ -605,7 +545,7 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="6" column="2">
-        <widget class="QPushButton" name="pushButton_5t">
+        <widget class="QPushButton" name="pushButton_5a">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -634,7 +574,7 @@ QPushButton:pressed {
 }
 
 QPushButton:hover {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 	border-radius: 8px; 
 }
 
@@ -657,7 +597,7 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="6" column="3">
-        <widget class="QPushButton" name="pushButton_6t">
+        <widget class="QPushButton" name="pushButton_6a">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -680,13 +620,13 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(234, 234, 234);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
 
 QPushButton:hover {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 	border-radius: 8px; 
 }
 
@@ -709,7 +649,7 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="7" column="0" colspan="2">
-        <widget class="QPushButton" name="pushButton_1t">
+        <widget class="QPushButton" name="pushButton_1a">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -732,13 +672,13 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(234, 234, 234);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
 
 QPushButton:hover {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 	border-radius: 8px; 
 }
 
@@ -761,7 +701,7 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="7" column="2">
-        <widget class="QPushButton" name="pushButton_2t">
+        <widget class="QPushButton" name="pushButton_2a">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -784,13 +724,13 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(234, 234, 234);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
 
 QPushButton:hover {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 	border-radius: 8px; 
 }
 
@@ -813,7 +753,7 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="7" column="3">
-        <widget class="QPushButton" name="pushButton_3t">
+        <widget class="QPushButton" name="pushButton_3a">
          <property name="minimumSize">
           <size>
            <width>105</width>
@@ -836,13 +776,13 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(234, 234, 234);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
 
 QPushButton:hover {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 	border-radius: 8px; 
 }
 
@@ -865,6 +805,110 @@ QPushButton:pressed {
         </widget>
        </item>
        <item row="8" column="0" colspan="2">
+        <widget class="QPushButton" name="pushButton_plusminus">
+         <property name="minimumSize">
+          <size>
+           <width>105</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>1000</width>
+           <height>1000</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(234, 234, 234);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 20px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>+/-</string>
+         </property>
+         <property name="shortcut">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QPushButton" name="pushButton_0a">
+         <property name="minimumSize">
+          <size>
+           <width>105</width>
+           <height>37</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>1000</width>
+           <height>1000</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>12</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: rgb(234, 234, 234);
+	font: 700 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px; 
+}
+
+QPushButton:hover {
+	background-color: rgb(210, 210, 210);
+	border-radius: 8px; 
+}
+
+QPushButton:pressed { 
+	color: rgb(0, 0, 0);
+ 	border-width: 1px;
+	border-radius: 10px;
+ 	font: bold 20px;
+ 	min-width: 8em;
+ 	padding: 5px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+         <property name="shortcut">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3">
         <widget class="QPushButton" name="dot">
          <property name="minimumSize">
           <size>
@@ -888,13 +932,13 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
-	background-color: rgb(235, 235, 235);
+	background-color: rgb(234, 234, 234);
 	font: 700 12pt &quot;Segoe UI&quot;;
 	border-radius: 8px; 
 }
 
 QPushButton:hover {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(210, 210, 210);
 	border-radius: 8px; 
 }
 
@@ -913,110 +957,6 @@ QPushButton:pressed {
          </property>
          <property name="shortcut">
           <string>.</string>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="2">
-        <widget class="QPushButton" name="pushButton_0t">
-         <property name="minimumSize">
-          <size>
-           <width>105</width>
-           <height>37</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>1000</width>
-           <height>1000</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Segoe UI</family>
-           <pointsize>12</pointsize>
-           <italic>false</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	background-color: rgb(235, 235, 235);
-	font: 700 12pt &quot;Segoe UI&quot;;
-	border-radius: 8px; 
-}
-
-QPushButton:hover {
-	background-color: rgb(220, 220, 220);
-	border-radius: 8px; 
-}
-
-QPushButton:pressed { 
-	color: rgb(0, 0, 0);
- 	border-width: 1px;
-	border-radius: 10px;
- 	font: bold 20px;
- 	min-width: 8em;
- 	padding: 5px;
-}
-</string>
-         </property>
-         <property name="text">
-          <string>0</string>
-         </property>
-         <property name="shortcut">
-          <string>0</string>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="3">
-        <widget class="QPushButton" name="answer">
-         <property name="minimumSize">
-          <size>
-           <width>105</width>
-           <height>37</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>1000</width>
-           <height>1000</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Arial</family>
-           <pointsize>12</pointsize>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	font: 100 12pt &quot;Arial&quot;;
-	border-radius: 8px; 
-	background-color: rgb(157, 217, 255);
-}
-
-QPushButton:hover {
-	background-color: rgb(105, 190, 255);
-	border-radius: 8px; 
-}
-
-QPushButton:pressed { 
-	color: rgb(0, 0, 0);
- 	border-width: 1px;
-	border-radius: 10px;
- 	font: bold 16px;
- 	min-width: 8em;
- 	padding: 5px;
-}
-</string>
-         </property>
-         <property name="text">
-          <string>answer</string>
-         </property>
-         <property name="shortcut">
-          <string>Return</string>
          </property>
         </widget>
        </item>

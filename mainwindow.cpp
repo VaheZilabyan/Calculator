@@ -16,11 +16,13 @@ MainWindow::MainWindow(QWidget *parent)
     ui->stackedWidget_main->setCurrentIndex(0);
     ui->stackedWidget->setCurrentIndex(1);
     ui->stackedWidget_main->insertWidget(1, &time);
+    ui->stackedWidget_main->insertWidget(2, &angle);
 
     connect(ui->actionAbout, SIGNAL(triggered()), this, SLOT(aboutClicked()));
     connect(ui->actionProfessional, SIGNAL(triggered()), this, SLOT(Professionalclicked()));
     connect(ui->actionStandard, SIGNAL(triggered()), this, SLOT(Standardclicked()));
     connect(ui->actionTime, SIGNAL(triggered()), this, SLOT(Timeclicked()));
+    connect(ui->actionAngle, SIGNAL(triggered()), this, SLOT(Angleclicked()));
 
     connect(ui->pushButton_0, SIGNAL(clicked()), this, SLOT(digits_number()));
     connect(ui->pushButton_1, SIGNAL(clicked()), this, SLOT(digits_number()));
@@ -51,6 +53,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->actionStandard->setCheckable(true);
     ui->actionProfessional->setCheckable(true);
     ui->actionTime->setCheckable(true);
+    ui->actionAngle->setCheckable(true);
 }
 
 void MainWindow::aboutClicked()
@@ -67,25 +70,39 @@ void MainWindow::Standardclicked()
     ui->actionStandard->setChecked(true);
     ui->actionProfessional->setChecked(false);
     ui->actionTime->setChecked(false);
+    ui->actionAngle->setChecked(false);
 }
 
 void MainWindow::Professionalclicked()
 {
-    ui->label->setText("0");
-    ui->history->setText("");
+    ui->label->setText("0");            // hnaravor a hanel
+    ui->history->setText("");           // hnaravor a hanel
     ui->stackedWidget_main->setCurrentIndex(0);
     ui->stackedWidget->setCurrentIndex(0);
     ui->actionProfessional->setChecked(true);
     ui->actionStandard->setChecked(false);
     ui->actionTime->setChecked(false);
+    ui->actionAngle->setChecked(false);
 }
 
 void MainWindow::Timeclicked()
 {
-    ui->label->setText("0");
-    ui->history->setText("");
+    ui->label->setText("0");            // hnaravor a hanel
+    ui->history->setText("");           // hnaravor a hanel
     ui->stackedWidget_main->setCurrentIndex(1);
     ui->actionTime->setChecked(true);
+    ui->actionStandard->setChecked(false);
+    ui->actionProfessional->setChecked(false);
+    ui->actionAngle->setChecked(false);
+}
+
+void MainWindow::Angleclicked()
+{
+    ui->label->setText("0");
+    ui->history->setText("");
+    ui->stackedWidget_main->setCurrentIndex(2);
+    ui->actionAngle->setChecked(true);
+    ui->actionTime->setChecked(false);
     ui->actionStandard->setChecked(false);
     ui->actionProfessional->setChecked(false);
 }
@@ -127,6 +144,7 @@ void MainWindow::math_operations()
             temp_answer = first.toDouble() / ui->label->text().toDouble();
         } else if (button->text() == "^") {
             temp_answer = pow(first.toDouble(), ui->label->text().toDouble());
+            bug = false;
         }
         ui->history->setText(QString::number(temp_answer, 'g', 16) + button->text());
         ui->label->setText("");
@@ -145,7 +163,9 @@ void MainWindow::math_operations()
 
 void MainWindow::on_result_clicked()
 {
-    if (ui->history->text().contains("/") || ui->history->text().contains("(")) {   //fix bug
+    // ete ka ^ gcel arajin if, bayc ^operatori depqum petq a hashvi
+    if (ui->history->text().contains("/") || ui->history->text().contains("(") || ui->history->text().contains("mod")
+        || ui->history->text().contains("∛")) {   //fix bug
         ui->history->setText("");
     } else if (!ui->history->text().contains("=")) {
         if (sec_time == true) {         // erb anyndhat +ic heto sexmum enq =

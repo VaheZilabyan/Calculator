@@ -4,5 +4,6 @@
         <file>img/std.png</file>
         <file>img/clock.png</file>
         <file>img/about.png</file>
+        <file>img/angle.png</file>
     </qresource>
 </RCC>

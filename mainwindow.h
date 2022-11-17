@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include "timemode.h"
+#include "angle.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,14 +16,16 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
-    virtual ~MainWindow();
+    ~MainWindow();
 
 protected:
     Ui::MainWindow *ui;
     TimeMode time;
+    Angle angle;
     QPushButton *button;
     QPushButton *math;  //ogtagorcvum e erb yntacqum poxum enq nshany
     bool sec_time = false;
+    bool bug = true;
     double first_number;
     double second_number;
     double answer;
@@ -34,6 +37,7 @@ protected slots:
     void Timeclicked();
     void Professionalclicked();
     void Standardclicked();
+    void Angleclicked();
     void digits_number();
     void on_pushButton_dot_clicked();
     void operations();

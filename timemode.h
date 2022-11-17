@@ -21,8 +21,7 @@ private slots:
     void digitsNumber_timeMode();
     void on_answer_clicked();
     void on_dot_clicked();
-
-public:
+private:
     Ui::TimeMode *ui;
 };
 

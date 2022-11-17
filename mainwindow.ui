@@ -4376,7 +4376,7 @@ QPushButton:pressed {
       <x>343</x>
       <y>87</y>
       <width>107</width>
-      <height>100</height>
+      <height>120</height>
      </rect>
     </property>
     <property name="title">
@@ -4385,6 +4385,7 @@ QPushButton:pressed {
     <addaction name="actionStandard"/>
     <addaction name="actionProfessional"/>
     <addaction name="actionTime"/>
+    <addaction name="actionAngle"/>
    </widget>
    <widget class="QMenu" name="menuAbout">
     <property name="title">
@@ -4438,6 +4439,15 @@ QPushButton:pressed {
    </property>
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionAngle">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/image/img/angle.png</normaloff>:/image/img/angle.png</iconset>
+   </property>
+   <property name="text">
+    <string>Angle</string>
    </property>
   </action>
  </widget>
