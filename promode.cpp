@@ -58,20 +58,17 @@ ProMode::ProMode(QWidget *parent)
 
 void ProMode::comboBox_Trigonometry(int index)
 {
+    double number = ui->label->text().toDouble();
     if (index == 0) {
-        double number = ui->label->text().toDouble();
         ui->history->setText("sin(" + ui->label->text() + ")=");
         ui->label->setText(QString::number(qSin(number * M_PI/180)));
     } else if (index == 1) {
-        double number = ui->label->text().toDouble();
         ui->history->setText("cos(" + ui->label->text() + ")=");
         ui->label->setText(QString::number(qCos(number * M_PI/180)));
     } else if (index == 2) {
-        double number = ui->label->text().toDouble();
         ui->history->setText("tan(" + ui->label->text() + ")=");
         ui->label->setText(QString::number(qTan(number * M_PI/180)));
     } else if (index == 3) {
-        double number = ui->label->text().toDouble();
         ui->history->setText("cot(" + ui->label->text() + ")=");
         ui->label->setText(QString::number(1/qTan(number * M_PI/180)));
     }
