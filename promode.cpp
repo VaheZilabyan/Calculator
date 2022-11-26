@@ -62,15 +62,25 @@ void ProMode::comboBox_Trigonometry(int index)
     if (index == 0) {
         ui->history->setText("sin(" + ui->label->text() + ")=");
         ui->label->setText(QString::number(qSin(number * M_PI/180)));
+        if (static_cast<int>(number) % 180 == 0 || number == 0) ui->label->setText("0");
     } else if (index == 1) {
         ui->history->setText("cos(" + ui->label->text() + ")=");
         ui->label->setText(QString::number(qCos(number * M_PI/180)));
+        if (static_cast<int>(number) % 270 == 0 || number == 90) ui->label->setText("0");
     } else if (index == 2) {
         ui->history->setText("tan(" + ui->label->text() + ")=");
         ui->label->setText(QString::number(qTan(number * M_PI/180)));
+        double sin = qSin(number * M_PI/180);
+        double cos = qCos(number * M_PI/180);
+        if (static_cast<int>(cos) % 270 == 0 || cos == 90) ui->label->setText("inf");
+        if (static_cast<int>(sin) % 180 == 0 || sin == 0) ui->label->setText("0");
     } else if (index == 3) {
         ui->history->setText("cot(" + ui->label->text() + ")=");
         ui->label->setText(QString::number(1/qTan(number * M_PI/180)));
+        double sin = qSin(number * M_PI/180);
+        double cos = qCos(number * M_PI/180);
+        if (static_cast<int>(sin) % 180 == 0 || sin== 0) ui->label->setText("inf");
+        if (static_cast<int>(cos) % 270 == 0 || cos == 90) ui->label->setText("0");
     }
 }
 
