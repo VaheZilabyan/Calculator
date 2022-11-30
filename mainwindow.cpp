@@ -58,7 +58,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 void MainWindow::aboutClicked()
 {
-    QMessageBox::information(this, "About", "Calculator v1.0.0\n© 2022 Synopsys. All rights reserved.");
+    QMessageBox::information(this, "About", "Calculator v1.0.0\n© 2022 Vahe Zilabyan. All rights reserved.");
 }
 
 void MainWindow::Standardclicked()
