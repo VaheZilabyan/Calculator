@@ -56,6 +56,16 @@ ProMode::ProMode(QWidget *parent)
     ui->comboBox_functions->setCurrentIndex(-1);
 }
 
+ProMode* ProMode::instance_= nullptr;;
+
+ProMode *ProMode::GetInstance()
+{
+    if(instance_== nullptr){
+        instance_ = new ProMode();
+    }
+    return instance_;
+}
+
 void ProMode::comboBox_Trigonometry(int index)
 {
     double number = ui->label->text().toDouble();
@@ -67,6 +77,7 @@ void ProMode::comboBox_Trigonometry(int index)
         ui->history->setText("cos(" + ui->label->text() + ")=");
         ui->label->setText(QString::number(qCos(number * M_PI/180)));
         if (static_cast<int>(number) % 270 == 0 || number == 90) ui->label->setText("0");
+        if (number == 0) ui->label->setText("1");
     } else if (index == 2) {
         ui->history->setText("tan(" + ui->label->text() + ")=");
         ui->label->setText(QString::number(qTan(number * M_PI/180)));

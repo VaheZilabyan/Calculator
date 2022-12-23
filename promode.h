@@ -8,8 +8,13 @@ class ProMode : public MainWindow
     Q_OBJECT
 
 public:
-    ProMode(QWidget *parent = nullptr);
+    ProMode(ProMode &other) = delete;
+    void operator=(const ProMode &) = delete;
+    static ProMode *GetInstance();
     ~ProMode();
+protected:
+    ProMode(QWidget *parent = nullptr);
+    static ProMode* instance_;
 private slots:
     void comboBox_Trigonometry(int index);
     void comboBox_Functions(int index);
